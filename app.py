@@ -114,12 +114,12 @@ def add_booking_order():
 def update_booking_order():
 	try:
 		_json = request.json
-		_id_booking_order = _json['id_booking_order']
-		_id_customer = _json['id_customer']
-		_booking_date = _json['booking_date']
-		_total_price = _json['total_price']	
+        _id_booking_order = _json['id_booking_order']
+        _id_customer = _json['id_customer']
+        _booking_date = _json['booking_date']
+        _total_price = _json['total_price']
         _status = _json['status']
-		# validate the received values
+        # validate the received values
 		if _id_booking_order and _id_customer and _booking_date and _total_price and _status and request.method == 'POST':
 			
 			sql = "UPDATE booking_order SET id_customer=%s, booking_date=%s, total_price=%s, status=%s WHERE id_booking_order=%s"
