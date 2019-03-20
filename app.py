@@ -118,7 +118,7 @@ def update_booking_order():
 		_id_customer = _json['id_customer']
 		_booking_date = _json['booking_date']
 		_total_price = _json['total_price']	
-        _status = _json['status']	
+        _status = _json['status']
 		# validate the received values
 		if _id_booking_order and _id_customer and _booking_date and _total_price and _status and request.method == 'POST':
 			
