@@ -531,7 +531,7 @@ def add_cost_modulation():
 #UPDATE
 
 @app.route('/cost_modulation/update', methods=['POST'])
-def update_booking_order():
+def update_cost_modulation():
 	try:
 		_json = request.json
 		_id_cost_modulation = _json['id_cost_modulation']
