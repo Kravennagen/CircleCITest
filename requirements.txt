@@ -2,6 +2,4 @@ flask
 jsonify
 MySQL
 flask-mysql
-request
-flash
 Flask
