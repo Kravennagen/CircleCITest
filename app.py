@@ -1,6 +1,6 @@
 # coding=utf-8
-'''
-from flask import Flask, jsonify'''
+
+from flask import Flask, jsonify
 from flaskext.mysql import MySQL
 from flask import flash, request
 from HotelModel import Hotel
